@@ -1,0 +1,20 @@
+package zoho;
+
+import java.util.Scanner;
+
+public class ZohoMatrix {
+
+	public static void main(String []args){
+        int i,j,k=0;
+        Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+        for(i=1;i<=n;i++){
+        for(j=1;j<=(2*n)-i;j++){
+            System.out.print(j<=n-i ? "  " : i%2==1 ? ++k+" " : k--+" "); //Here,I used double space for better UI experience.
+        }
+        k+=n;
+        System.out.println();
+        }
+     }
+
+}
